@@ -1,8 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
         <title>Akyto | Network</title>
-        <link rel="icon" type="image/png" sizes="64x64" href="C:\Users\Theo\Desktop\Personnal Project\Akyto\Web\images\favicon.png">
+        <link rel="icon" type="./image/png" sizes="64x64" href="./images/favicon.png">
     </head>
+    <body>
+        <div class="main-container">
+            <section class="header">
+                <a href="./images/favicon.png"><img class="logo" src="./images/favicon.png" alt="logo Akyto"></a> 
+                <button class="btn btn-store btnHighlight">Store</button>
+                <form method="get" action="index.html">
+                    <input id="location-entry-field" type=search placeholder="Enter a username">
+                </form>
+                <button class="btn btn-play btnHighlight" onmouseover="this.textContent = 'akyto.club'" onmouseout="this.textContent = 'Connect'">Connect</button>
+            </section>
+            <h1>Our first season has arrived!</h1>
+            <h2>Everything you need to know can be found here!</h2>
+            <section class="boxBackground">
+                <h1 class="h1Information">Announcements:</h1>
+                <div class="box-informations">
+                    <article>
+                        <h3>The release of our website and server is finally official!</h3>
+                        <div class="sub-displayer">
+                            <p class="p-sub">We are proud and happy to announce the publication of the first version of our website. You'll find a lot of interesting stuff about us!
+                                Here you'll find access to our store if you'd like to help the server financially.
+                                
+                                Don't forget that this is only the first version of our site, and we'll be updating it regularly and frequently!
+                                
+                                Thank you for your understanding and we wish you lots of fun on our platforms!</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-column">
+                <p>© Akyto 2024-2025</p>
+            </div>
+            <div class="discord"></div>
+            <a href="https://discord.gg/zgjCmTuyR3" target="_blank">
+                <img class="discord" src="./images/discord.png" alt="Discord Logo" width="32" height="32">
+            </a>
+        </footer>
+    </body>
 </html>
