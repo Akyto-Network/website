@@ -4,6 +4,7 @@
 }
 
 .main-container {
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     background: #929292;
@@ -17,8 +18,8 @@
 }
 
 .logo {
-    margin-top: 2px;
-    margin-left: 10px;
+    margin-top: 3px;
+    margin-left: 20px;
 }
 
 .mushway {
@@ -30,8 +31,12 @@ h1 {
     font-family: "roboto", sans-serif;
     color: #ffffff;
     font-size: 35px;
-    margin-top: 50px;
-    margin-left: 32%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.textHeader {
+    padding-top: 1.5%;
 }
 
 h2 {
@@ -39,8 +44,7 @@ h2 {
     color: #ffffff;
     font-size: 22px;
     margin-top: 1px;
-    margin-left: 30%;
-    margin-bottom: -2%;
+    margin-bottom: -3%;
 }
 
 h3 {
@@ -62,24 +66,26 @@ p {
 .h1Information {
     color: #000000;
     margin-left: 37%;
-    padding-top: 2%;
 }
 
-.head {
-    max-width: 15%;
-    max-height: 15%;
-}
 
 .body-container {
     background: #c2c1c1;
     padding-bottom: 3%;
+    padding-top: 1%;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
+}
+
+.akyto-background {
+    min-height: 135px;
+    background-image: url("/images/headerakyto.png");
+    text-align: center;
+}
 
 .box-informations {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -108,8 +114,8 @@ p {
 }
 
 .btn-store {
-    margin-top: 10px;
-    margin-left: 37%;
+    margin-top: 15px;
+    margin-left: 42%;
     height: 25px;
     font-family: "roboto", sans-serif;
     font-style: bold;
@@ -117,8 +123,8 @@ p {
 }
 
 .btn-play {
-    margin-top: 10px;
-    margin-left: 39%;
+    margin-top: 15px;
+    margin-left: 32%;
     height: 25px;
     font-family: "roboto", sans-serif;
     font-style: bold;
@@ -132,8 +138,8 @@ p {
 }
 
 #location-entry-field {
-    margin-top: 25px;
-    margin-left: 415%;
+    margin-top: 35px;
+    margin-left: 345%;
     color: black;
     border: 1px solid #c2c1c1;
     min-width: 50px;
@@ -169,6 +175,85 @@ footer p {
     padding-right: 90%;
 }
 
-@media screen {
-    
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: height 0.3s ease;
+}
+
+.image-container .image-caption {
+    color: white;
+    text-align: center;
+}
+
+.image-container:hover img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-container:hover .image-overlay {
+    height: auto;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1280px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #location-entry-field {
+        margin-top: 25px;
+        margin-left: 200%;
+        color: black;
+        border: 1px solid #c2c1c1;
+        min-width: 50px;
+    }
+
+    .btn-play {
+        margin-top: 10px;
+        margin-left: 28%;
+        height: 25px;
+        font-family: "roboto", sans-serif;
+        font-style: bold;
+        font-size: 17px;
+    }
+
+    .mushway {
+        margin-left: 0.5%;
+        display: flex;
+    }
+
+    .box-informations {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        width: 550px;
+        height: 350px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 15%;
+        margin-top: 2%;
+        display: flex;
+    }
+
+    .discord {
+        margin-top: 40%;
+        padding-right: 85%;
+    }
 }
