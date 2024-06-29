@@ -8,19 +8,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <title>Akyto | Network</title>
         <link rel="icon" type="./images/favicon.png" sizes="64x64" href="./images/favicon.png">
+        <script defer src="script.js"></script>
     </head>
     <body>
         <div class="main-container">
             <section class="header">
                 <a href="./images/favicon.png"><img class="logo" src="./images/favicon.png" alt="logo Akyto"></a> 
                 <a href="https://akyto-network.tebex.io" class="btn btn-store btnHighlight">Store</a>
-                <form method="get" action="index.html">
-                    <input id="location-entry-field" type=search placeholder="Enter a username">
-                </form>
-                <button class="btn btn-play btnHighlight" onmouseover="this.textContent = 'akyto.club'" onmouseout="this.textContent = 'Connect'">Connect</button>
+                <form id="search-form" method="get" action="index.html">
+                    <input id="location-entry-field" type="search" placeholder="Enter a username">
+                  </form>
+                <button id-="btn-play" class="btn btn-play btnHighlight" onmouseover="this.textContent = 'akyto.club'" onmouseout="this.textContent = 'Connect'">Connect</button>
             </section>
             <div class="akyto-background">
                 <h1 class="textHeader">Our first season has arrived!</h1>
@@ -45,27 +48,72 @@
                             </div>
                         </article>
                     </div>
+                    <div class="box-informations">
+                        <article>
+                            <h3>Akyto X SoupWorld</h3>
+                            <div class="sub-displayer">
+                                <p>───────────────────────────────────</p>
+                                <p class="p-sub">We are delighted to announce our association with SoupWorld.
+                                    Please note that this is not a merger, but an association.
+                                    You'll be able to benefit from Soup as well as Practice, and all on a single hub!
+                                    No need to travel from server to server to have fun :p
+                                   
+                                   Please note that ranks on Akyto & SoupWorld are not cumulative between the two servers. We each have a separate store, so don't buy with the idea of having a rank on both servers or anything else :p</p>
+                                <p>───────────────────────────────────</p>
+                                <p>29/06/2024</p>
+                            </div>
+                        </article>
+                    </div>
                     <img class="mushway" src="./images/mushway.png" alt="pvp player icon">
                 </div>
-            </div>
-            <h1 class="h1Staff">Our Staff:</h1>
-            <div class="image-container">
-                <img class="head" src="./images/head/owner/rimk.png" alt="rimk head">
-                <div class="image-overlay">
-                    <div class="image-caption">
-                        <p>Owner | rimk</p>
+                <div class="resume-container">
+                    <div class="flex-display">
+                        <video muted autoplay loop class="background-video">
+                            <source src="./videos/akyto.mp4" type="video/mp4">
+                            Votre navigateur ne prend pas en charge la balise vidéo HTML5.
+                        </video>
+                        <div class="box-rules">
+                            <article>
+                                <h3>Network Rules:</h3>
+                                <div class="sub-displayer">
+                                    <p>───────────────────────────────────</p>
+                                    <h3>General:</h3>
+                                    <p class="p-rules">• Do not excessively spam both messages, characters or symbols.</p>
+                                    <p class="p-rules">• Do not be toxic towards players and staff. Minor toxicity is allowed.</p>
+                                    <p class="p-rules">• If you’re going to post a video link in game chat, the content in the video must be relevant to Akyto Network.</p>
+                                    <p class="p-rules">• Do not be racist, derogatory towards beliefs, or discriminatory towards one’s sexuality or gender identity.</p>
+                                    <p class="p-rules">• No NSFW imaging.</p>
+                                    <p class="p-rules">• Do not share accounts with others, your account is your risk.</p>
+                                    <p class="p-rules">• Do not advertise other servers or domains.</p>
+                                    <p class="p-rules">• Do not post links or domains to other websites or servers in any channels.</p>
+                                    <p class="p-rules">• Do not advertise marketplaces or use our chat as a marketplace.</p>
+                                    <p class="p-rules">• Do not participate in or endorse malicious activity. (doxing, DDoSing, etc.)</p>
+                                    <p class="p-rules">• Do not tag/ping staff members  in any channel unless deemed urgent.</p>
+                                    <p class="p-rules">• Do not lie to staff members or waste staff members time.</p>
+                                    <p>───────────────────────────────────</p>
+                                    <h3>Practice:</h3>
+                                    <p class="p-rules">• Butterfly click at your own risk as it can result in an Anti-Cheat ban.</p>
+                                    <p class="p-rules">• The use of unfair advantages are not allowed.</p>
+                                    <p class="p-rules">• Do not use bugs, server setup or glitches to your advantage.</p>
+                                    <p class="p-rules">• Do not camp, stall, grief or attempt to ruin gameplay during a match.</p>
+                                    <p class="p-rules"> » 4a. Do not ELO boost or manipulate the ELO system. (Statistics will be wiped.)</p>
+                                    <p class="p-rules"> » 4b. Do not boost your statistics through any means. (")</p>
+                                    <p>───────────────────────────────────</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
+            <footer>
+                <div class="footer-column">
+                    <p>© Akyto 2024-2025</p>
+                </div>
+                <div class="discord"></div>
+                <a href="https://discord.gg/zgjCmTuyR3" target="_blank">
+                    <img class="discord" src="./images/discord.png" alt="Discord Logo" width="38" height="32">
+                </a>
+            </footer>
         </div>
-        <footer>
-            <div class="footer-column">
-                <p>© Akyto 2024-2025</p>
-            </div>
-            <div class="discord"></div>
-            <a href="https://discord.gg/zgjCmTuyR3" target="_blank">
-                <img class="discord" src="./images/discord.png" alt="Discord Logo" width="32" height="32">
-            </a>
-        </footer>
     </body>
 </html>
